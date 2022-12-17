@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;500;600&family=Sacramento&display=swap');
+
+body{
+    background-color:antiquewhite;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+     position: sticky;
+     top:0px;
+     z-index: 1;
+}
+nav ul{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    height: 65px;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li {
+    padding: 0px 12px;
+}
+.brand img{
+    height: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2vw;
+    display: flex;
+    width: 70%;
+    margin: 15px auto;
+    padding: 34px;
+    border-radius: 15px;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.bottom{
+    height: 100px;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#myProgressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icon{
+    color: white;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+.icon-item{
+   font-size: 40px;
+   margin: 15px;
+}
+.containeOfsongList{
+margin-top: 50px;
+}
+.songListItem{
+background-color: white;
+color: black;
+width: 60%;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 34px;
+margin: 20px 0;
+position: relative;
+}
+.songListItem img{
+margin: 0 0 0 25px;
+   width: 50px;
+   border-radius: 25px;
+}
+.songListIcon{
+    cursor: pointer;
+}
+.gifContainer{
+    position: absolute;
+    left: 10vh;
+    color: white;
+}
+.gifContainer img {
+   
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.songTime{
+   position: absolute;
+   right: 63px;
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 95%;
+}
+@media only screen and (max-width: 950px) {
+ body{
+    background-color: red;
+ }
+ .container{
+    width: 85%;
+font-size: 2vw;
+}
+.songListItem{
+    width: 75vw;
+}
+.gifContainer{
+    position: absolute;
+    left: 3vh;
+    margin-top: 100px;
+
+    }
+.bottom{
+    height: 140px;
+    width: 102%;
+    display:flex;
+    justify-items: center;
+}
+.icon{
+    margin: auto auto;
+}
+}
+}
